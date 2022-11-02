@@ -18,6 +18,8 @@ export const RightColumn = styled.div`
   display: flex;
   gap: 50px;
   padding-right: 50px;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const LeftColumn = styled.div`
@@ -36,7 +38,7 @@ export const TableRow = styled.div`
   padding: 10px 0;
 `;
 
-export const Text = styled.p`
+export const ColumnValue = styled.p`
   font-family: "Palanquin";
   font-style: normal;
   font-weight: 500;

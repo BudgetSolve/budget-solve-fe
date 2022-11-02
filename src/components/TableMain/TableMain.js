@@ -2,7 +2,7 @@ import React from "react";
 import {
   TableHead,
   Wrapper,
-  Text,
+  ColumnValue,
   LeftColumn,
   RightColumn,
   TableRow,
@@ -15,14 +15,14 @@ function TableMain(props) {
     <Wrapper>
       <TableHead>
         <LeftColumn>
-          <Text>Name</Text>
+          <ColumnValue>Name</ColumnValue>
         </LeftColumn>
         <RightColumn>
-          <Text>Created</Text>
-          <Text>Last edited</Text>
-          <Text>Budget</Text>
-          <Text>Profit</Text>
-          <Text>Value</Text>
+          <ColumnValue>Created</ColumnValue>
+          <ColumnValue>Last edited</ColumnValue>
+          <ColumnValue>Budget</ColumnValue>
+          <ColumnValue>Profit</ColumnValue>
+          <ColumnValue>Value</ColumnValue>
         </RightColumn>
       </TableHead>
 
@@ -32,11 +32,11 @@ function TableMain(props) {
           <ProjectAuthor>Andrew</ProjectAuthor>
         </LeftColumn>
         <RightColumn>
-          <Text>13/10/2022</Text>
-          <Text>18/10/2022</Text>
-          <Text>2500$</Text>
-          <Text>500$</Text>
-          <Text>2750$</Text>
+          <ColumnValue>13/10/2022</ColumnValue>
+          <ColumnValue>18/10/2022</ColumnValue>
+          <ColumnValue>2500$</ColumnValue>
+          <ColumnValue>500$</ColumnValue>
+          <ColumnValue>2750$</ColumnValue>
         </RightColumn>
       </TableRow>
     </Wrapper>
