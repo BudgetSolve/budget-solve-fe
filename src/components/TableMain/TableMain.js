@@ -1,13 +1,11 @@
 import React from "react";
+import RenderItems from "./RenderItems";
 import {
   TableHead,
   Wrapper,
   ColumnValue,
   LeftColumn,
   RightColumn,
-  TableRow,
-  ProjectName,
-  ProjectAuthor,
 } from "./styled";
 
 function TableMain(props) {
@@ -26,19 +24,7 @@ function TableMain(props) {
         </RightColumn>
       </TableHead>
 
-      <TableRow>
-        <LeftColumn>
-          <ProjectName>Insurance</ProjectName>
-          <ProjectAuthor>Andrew</ProjectAuthor>
-        </LeftColumn>
-        <RightColumn>
-          <ColumnValue>13/10/2022</ColumnValue>
-          <ColumnValue>18/10/2022</ColumnValue>
-          <ColumnValue>2500$</ColumnValue>
-          <ColumnValue>500$</ColumnValue>
-          <ColumnValue>2750$</ColumnValue>
-        </RightColumn>
-      </TableRow>
+      <RenderItems></RenderItems>
     </Wrapper>
   );
 }

@@ -18,7 +18,8 @@ export const ButonState = styled.button`
   text-align: center;
   transition: 0.3s;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: #00b78b;
     color: #ffffff;
   }
