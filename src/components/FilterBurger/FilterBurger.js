@@ -3,7 +3,10 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 function FilterBurger(props) {
   return (
-    <MoreVertIcon fontSize="large" style={{ color: "white" }}></MoreVertIcon>
+    <MoreVertIcon
+      className="filterIcon"
+      fontSize="large"
+    ></MoreVertIcon>
   );
 }
 
