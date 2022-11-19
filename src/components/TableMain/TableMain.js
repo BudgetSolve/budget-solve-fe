@@ -8,7 +8,7 @@ import {
   RightColumn,
 } from "./styled";
 
-function TableMain(props) {
+function TableMain({projects}) {
   return (
     <Wrapper>
       <TableHead>
@@ -24,7 +24,7 @@ function TableMain(props) {
         </RightColumn>
       </TableHead>
 
-      <RenderItems></RenderItems>
+      {projects && <RenderItems projects={projects}></RenderItems>}
     </Wrapper>
   );
 }

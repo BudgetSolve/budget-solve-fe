@@ -8,7 +8,7 @@ import {
   ProjectAuthor,
 } from "./styled";
 
-function RenderItems(props) {
+function RenderItems({projects}) {
   const data = [
     {
       projectName: "Insurance",
@@ -29,8 +29,7 @@ function RenderItems(props) {
       value: "3050$",
     },
   ];
-
-  const listItems = data.map((element) => {
+  const listItems = projects.map((element) => {
     return (
       <TableRow>
         <LeftColumn>

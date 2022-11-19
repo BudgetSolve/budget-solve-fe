@@ -4,7 +4,11 @@ import {AccessKey} from "../../utils/auth";
 // const API_URL = "http://localhost:8080/api"
 
 export const getCheckForAuthorized = async () => {
-    const result = await axiosInstance.post("/auth/check-auth")
+    const result = await axiosInstance.post("/auth/check-auth", {}, {
+        headers: {
+            Authorization: `Bearer ${AccessKey.get()}`
+        }
+    })
     return result
 }
 
