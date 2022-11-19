@@ -1,4 +1,4 @@
-import {instance} from "../axiosInstance";
+import {axiosInstance} from "../axiosInstance";
 
 export const getProjects = async () => {
     // const result = await instance.get(`/projects/`)
